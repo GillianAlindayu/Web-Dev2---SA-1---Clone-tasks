@@ -17,156 +17,128 @@
         </header>
 <style>
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
+  box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-}
-
-.header img {
-    width: 150px;
-}
-
-.header nav ul {
-    text-align: center;
-    justify-content: space-between;
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
-
-.header nav ul li a {
-    text-align: center;
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-}
-
-h1 {
-    margin: 20px 0;
-    font-size: 40px;
-}
-
-h2 {
-    margin: 30px 0;
-    font-size: 28px;
-}
-
-p {
-    margin: 20px 0;
-    font-size: 16px;
-    color: #1f1f1f;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
+/* Create three equal columns that floats next to each other */
 .column {
-    flex: 1;
-    padding: 10px;
-    margin: 0 10px;
-    height: auto;
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
-.column:nth-child(1) {
-    background-color: #ffffff;
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.column:nth-child(2) {
-    background-color: #e5e5e5;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-.column:nth-child(3) {
-    background-color: #f4f4f4;
-}
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
 
-/* Make images responsive */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-/* Styling the single large image */
-.single img {
-    width: 100%;
-    height: auto;
-    margin: 20px 0;
-}
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
 
-/* Image gallery styling */
-.image.gallery ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 10px;
-}
+        .header img {
+            align-items: center; 
+            width: 150px;
+        }
 
-.image.gallery ul li {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
+        .header nav ul {
+            text-align: center; 
+            justify-content: space-between; 
+            list-style: none;
+            display: flex;
+            gap: 10px;
+        }
 
-.image.gallery img {
-    width: 100%;
-    max-width: 200px; /* Set max width for gallery images */
-    height: auto;
-    object-fit: cover;
-}
+        .header nav ul li a {
+            text-align: center; 
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
 
-footer {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
+        h1 {
+            margin: 20px 0;
+            font-size: 40px;
+        }
 
-footer h2 {
-    margin-bottom: 10px;
-    font-size: 24px;
-}
+        h2 {
+            margin: 30px 0;
+            font-size: 28px;
+        }
 
-footer p {
-    font-size: 14px;
-    color: #666;
-}
+        p {
+            margin: 20px 0;
+            font-size: 16px;
+            color: #1f1f1f;
+        }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .row {
-        flex-direction: column;
-    }
+        /* Column layout for content */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
 
-    .column {
-        margin-bottom: 20px;
-    }
+        .column {
+            flex: 1;
+            padding: 10px;
+            margin: 0 10px;
+            height: auto;
+        }
 
-    .image.gallery img {
-        max-width: 100%;
-    }
-}
+        .column:nth-child(1) {
+            background-color: #ffffff;
+        }
+
+        .column:nth-child(2) {
+            background-color: #e5e5e5;
+        }
+
+        .column:nth-child(3) {
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        footer h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #666;
+        }
 
 </style>
 </head>
@@ -207,27 +179,7 @@ footer p {
 
         Ad venenatis sapien habitant posuere donec porttitor vel nisi. Sodales laoreet donec diam rhoncus lectus euismod orci torquent curae. Fames rhoncus torquent sed convallis; potenti cras. Dictumst arcu libero nulla malesuada mi ridiculus platea. Interdum ullamcorper fringilla himenaeos mollis; in arcu pharetra massa. Nunc mauris taciti montes sapien molestie orci ac quis.</p>
   </div>
-</div>
-<div class="single image">
-    <img src="all-encores.jpg" alt="big images"
-</div>
-<div class="image gallery">
-    <ul>
-        <li>
-            <img src="blurred.jpg" alt="image1">
-            <img src="encores-2.jpg" alt="image2">
-            <img src="articulation.jpg" alt="image3">
-            <img src="eulogy-for-evolution.jpg" alt="image4">
-        </li>
-    </ul>
-</div>
-<footer>
-    <h2>
-        The author
-    </h2>
-    <p>Sapien leo scelerisque per convallis torquent nunc. Lobortis eleifend a nam sit turpis nostra. Tempus suspendisse libero curae faucibus lobortis litora bibendum praesent! Eget quam magna, diam commodo interdum sapien magnis. 
 
-        Copyright © 2023 Erased Disks Ltd.</p>
-</footer>
 </body>
-</html>
+</html> 
+
