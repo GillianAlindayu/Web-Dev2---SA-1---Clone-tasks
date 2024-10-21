@@ -12,7 +12,7 @@
 body{
     font-family: arial; 
     line-height: 3.6; 
-    margin: 0; 
+    margin: 10px; 
     padding: 20px; 
     display: flex; 
     flex-direction: column; 
@@ -32,11 +32,12 @@ body{
 
 heading {
 
-
     justify-content: space-between; 
+    text-align: center; 
     align-items: center; 
     background-color:rgb(255, 255, 255); 
     padding: 20px; 
+    font-family: "Protest Guerrilla", sans-serif; 
 
 
 }
@@ -85,8 +86,9 @@ heading img{
 /*typography and layout adjustments */
 
 .intro{
-    font-size: 1.3rem; 
+    font-size: 3rem; 
     font-weight: 10px; 
+    padding: 20px;
     background-color: rgb(191, 191, 191); 
 }
 
