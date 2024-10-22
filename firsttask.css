@@ -103,6 +103,47 @@
           .column:nth-child(3) {
               background-color: #f4f4f4;
           }
+
+          /*Container for the gallery */ 
+
+          .img.gallery {
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            gap: 10px; 
+          }
+
+          .image.gallery img {
+            width: 400px; 
+            height: 400px; 
+            object-fit: cover; 
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+
+          }
+
+          /*Add hover effect for images. */
+
+          .image.gallery img:hover{
+            transform: scale(1.05);
+            box-shadow: 4px, 4px, 12px rgba(0,0,0,0.2); 
+          }
+
+
+    /* Responsive layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .image.gallery img {
+        width: 48%; /* Two images per row */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image.gallery img {
+        width: 100%; /* One image per row */
+    }
+}
+
+
   
           footer {
               margin-top: 40px;
