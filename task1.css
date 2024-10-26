@@ -1,158 +1,87 @@
-/* Global styling */
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    margin: 20px;
-    padding: 10px;
+    font-family: helvetica, sans serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for newspaper feel */
 }
 
-.container {
-    align-items: center;
-    justify-content: center; 
-    min-width: 1200px; 
-    max-height: 1200px;
-    max-width: 1200px;
-    max-height: 1200px; 
-    margin: 20px;
-    padding: 20px;
-}
 
-/* Header styles */
+
 header {
-    text-align: center; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f8f8;
-    border-bottom: 1px solid #ddd;
+    background: #333; /* Dark header */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
-header img {
-    justify-content: center;
-    align-items: center; 
-    width: 100px;
-    height: auto;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    color: black;   
+    display: inline;
+    margin: 0 15px;
+}
+
+.title {
+
+    text-align: Left;
+    margin: 5px 0;
+}
+
+h2{
+    text-align: left; 
+    margin: 5px; 
     
 }
 
-header nav ul {
-    text-align: center; 
-    list-style-type: none;
-    display: flex;
-    gap: 15px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-h1 {
-    font-size: 4.0rem; 
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px; 
-}
-
-
-h2{
-    font-size: 3.5rem; 
-    text-align: left; 
-    margin-top: 10px; 
-}
-h3 {
-    font-size: 2.5rem; 
-    margin-bottom: 10px;
-}
-
-p{
-    font-size: 20px; 
-    text-align: center; 
-}
-/* Newspaper-style columns */
 .row {
-    flex: 2; 
-    border-radius: 20px; 
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin: 20px; 
-    padding: 20px;
+    justify-content: space-between;
+    margin: 20px; /* Margin around the rows for space */
 }
 
 .column {
-    flex: 1;
-    background-color: #e9f7f7;
-    margin: 20px; 
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    min-width: 300px;
-    max-width: 380px;
+    flex: 1; /* Make each column take equal space */
+    margin: 0 10px; /* Space between columns */
+    padding: 20px; /* Padding inside columns */
+    background: #fff; /* White background for the columns */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
 }
 
 .column h3 {
-    color: #444;
+    margin-top: 0; /* No margin on top of headings */
 }
 
-/* Image gallery */
 .image.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 10px;
-    padding: 20px;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap */
+    justify-content: space-between;
+    margin: 20px;
 }
 
 .image.gallery img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    width: calc(33.33% - 10px); /* Three images in a row, with some margin */
+    margin-bottom: 10px;
+    border-radius: 5px; /* Rounded image corners */
 }
 
-.image.gallery img:hover {
-    transform: scale(1.05);
-}
-
-/* Footer styles */
 footer {
-    background-color: #f1f1f1;
-    padding: 20px;
+
     text-align: center;
-    border-top: 1px solid #ddd;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+
+footer img {
+    border-radius: 50%; /* Circular profile picture */
 }
 
 footer h2 {
-    text-align: center; 
-    margin-bottom: 10px;
-    color: #444;
-}
-
-footer p {
-    max-width: 800px;
-    margin: 0 auto 10px;
-    color: #666;
-}
-
-/* Responsive styles */
-@media (max-width: 800px) {
-    .header, .row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header nav ul {
-        align-items: center; 
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .column {
-        min-height: 100px; 
-        min-width: 100%;
-        max-width: none;
-    }
+    margin: 10px 0; /* Margin for heading in footer */
 }
