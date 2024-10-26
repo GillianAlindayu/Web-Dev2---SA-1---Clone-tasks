@@ -1,0 +1,150 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px; /* Base font size */
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif; /* Change to your preferred font family */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light background color for contrast */
+    color: #333; /* Dark text color for readability */
+}
+
+/* Header Styles */
+header {
+    background: #333; /* Dark background for header */
+    color: #fff; /* White text */
+    padding: 1rem 0; /* Padding for spacing */
+    text-align: center; /* Center-align text and logo */
+}
+
+header img {
+    max-width: 100%; /* Make logo responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+nav ul {
+    list-style: none; /* Remove list style */
+    padding: 1rem 0; /* Add vertical spacing */
+}
+
+nav ul li {
+    display: inline; /* Align links horizontally */
+    margin: 0 1rem; /* Spacing between links */
+}
+
+nav ul li a {
+    color: #fff; /* White link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #f4f4f4; /* Lighter color on hover */
+}
+
+/* Container for Main Content */
+.container {
+    padding: 2rem;
+    background: white; /* White background for content area */
+    margin: 1rem; /* Margin around content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem; /* Large main heading size */
+    margin-bottom: 1rem; /* Spacing below */
+}
+
+h2 {
+    font-size: 1.5rem; /* Medium heading size */
+    margin-bottom: 1rem; /* Spacing below */
+}
+
+h3 {
+    font-size: 1.25rem; /* Smaller heading size */
+    margin: 1rem 0; /* Vertical margin */
+}
+
+/* Section Styling */
+.section {
+    padding: 1rem; /* Spacing inside each section */
+    border-bottom: 1px solid #eee; /* Separator for sections */
+}
+
+.section:last-child {
+    border-bottom: none; /* Remove border from last section */
+}
+
+/* Gallery Styles */
+.gallery {
+    display: flex; /* Use flexbox for image gallery */
+    flex-wrap: wrap; /* Allow wrapping of images */
+    justify-content: space-between; /* Space out images */
+    margin: 2rem 0; /* Margin above and below gallery */
+}
+
+.gallery img {
+    max-width: calc(20% - 1rem); /* Responsive images, 5 in a row, with some space */
+    margin-bottom: 1rem; /* Spacing below each image */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center text in footer */
+    padding: 2rem 0; /* Padding around footer content */
+    background: #333; /* Dark background for footer */
+    color: #fff; /* White text in footer */
+    margin-top: 2rem; /* Space above footer */
+}
+
+footer h2 {
+    margin-bottom: 1rem; /* Space below heading in footer */
+}
+
+footer img {
+    border-radius: 50%; /* Round profile picture */
+    margin-top: 1rem; /* Space above the image */
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .gallery img {
+        max-width: calc(45% - 1rem); /* Adjust image size for tablets */
+    }
+
+    nav ul li {
+        display: block; /* Stack links vertically on smaller screens */
+        margin: 0.5rem 0; /* Adjust spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    h2 {
+        font-size: 1.25rem; /* Adjust font size for mobile */
+    }
+
+    h3 {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+
+    .gallery img {
+        max-width: calc(100% - 1rem); /* Full width images on mobile */
+    }
+}

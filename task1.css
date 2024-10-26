@@ -16,12 +16,13 @@ header {
 }
 
 nav ul {
+    color: black; 
     list-style-type: none;
     padding: 0;
 }
 
 nav ul li {
-    color: black;   
+    color: rgb(255, 255, 255);   
     display: inline;
     margin: 0 15px;
 }
@@ -79,6 +80,8 @@ footer {
 }
 
 footer img {
+    
+    align-items: right; 
     border-radius: 50%; /* Circular profile picture */
 }
 
