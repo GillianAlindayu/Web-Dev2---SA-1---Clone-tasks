@@ -1,21 +1,23 @@
-/* Global Styles */
-* {
-    box-sizing: border-box;
+/* task2.css */
+
+/* Reset some default styles */
+body, h1, h2, p {
     margin: 0;
     padding: 0;
 }
 
+/* Basic styling for body */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
 }
 
-/* Header Styles */
+/* Header styles */
 header {
     background: #333;
     color: #fff;
-    padding: 15px 20px;
+    padding: 10px 20px;
     text-align: center;
 }
 
@@ -23,14 +25,22 @@ header h1 {
     margin-bottom: 10px;
 }
 
+/* Navigation styles */
+nav {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the items */
+    align-items: center; /* Vertically centered */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex; /* Align items in a row */
+    margin-right: 20px; /* Space between nav and button */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-right: 15px;
 }
 
 nav ul li a {
@@ -38,58 +48,53 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Button Styles */
 button {
-    background: #007bff;
-    color: white;
+    border-right: #333;
+    box-sizing: flex; 
+    background: #e63946;
+    color: #fff;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
 }
 
 button:hover {
-    background: #0056b3;
+    background: #d62839;
 }
 
-/* Main Container Styles */
+/* Container for movies */
 .container {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
-    justify-content: center; /* Center items */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
     padding: 20px;
 }
 
-/* Movie Item Styles */
+/* Movie card styles */
 .movie {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    width: calc(33.33% - 40px); /* Three items per row with spacing */
-    margin: 10px; /* Spacing between items */
-    text-align: center;
-    transition: box-shadow 0.3s;
+    background-color: rgb(138, 138, 138);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
 }
 
 .movie:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+    transform: scale(1.03);
 }
 
 .movie img {
-    max-width: 100%; /* Responsive image sizing */
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    width: 100%;
+    height: auto;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .movie {
-        width: calc(50% - 40px); /* Two items per row */
-    }
+.movie h2 {
+    padding: 10px;
+    font-size: 1.2em;
+    color: #333;
 }
 
-@media (max-width: 768px) {
-    .movie {
-        width: calc(100% - 40px); /* One item per row */
-    }
+.movie p {
+    padding: 0 10px 10px;
+    color: #212727;
 }
