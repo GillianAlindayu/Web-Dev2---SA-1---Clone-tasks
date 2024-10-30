@@ -1,102 +1,102 @@
+/* Reset some basic styles */
 body {
-    font-family: helvetica, sans serif;
+    font-family: 'Josefin Sans', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Light background for newspaper feel */
+    background-color: #f4f4f4;
 }
 
-
-
+/* Header styles */
 header {
-    background: #333; /* Dark header */
+    background: #333;
     color: white;
-    padding: 10px 0;
+    padding: 1rem;
     text-align: center;
 }
-.protest-guerrilla-regular, h1, h2, h3 {
-    font-family: "Protest Guerrilla", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
 
-.josefin-sans, p{
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+header img {
+    width: 150px;
+    margin-bottom: 10px;
 }
+
 nav ul {
-    color: black; 
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 nav ul li {
-    color: rgb(255, 255, 255);   
     display: inline;
     margin: 0 15px;
 }
 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
 .title {
-
-    text-align: Left;
-    margin: 5px 0;
+    text-align: center;
+    margin: 20px 0;
 }
 
-h2{
-    text-align: left; 
-    margin: 5px; 
-    
+/* Introduction styles */
+h1, h2 {
+    text-align: center;
 }
 
+/* Row and column styles */
 .row {
     display: flex;
-    justify-content: space-between;
-    margin: 20px; /* Margin around the rows for space */
+    justify-content: space-around; /* Space evenly between columns */
+    max-width: 1200px; /* Limit the row width */
+    margin: 20px auto; /* Center the row */
 }
 
 .column {
-    flex: 1; /* Make each column take equal space */
-    margin: 0 10px; /* Space between columns */
-    padding: 20px; /* Padding inside columns */
-    background: #fff; /* White background for the columns */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+    background-color: rgb(207, 207, 207);
+    padding: 20px;
+    margin: 10px;
+    flex: 1; /* Automatically grows/shrinks to fit the available space */
+    min-width: 300px; /* Minimum width for columns */
+    max-width: 400px; /* Maximum width for columns */
+    border-radius: 8px; /* Rounded corners */
 }
 
-.column h3 {
-    margin-top: 0; /* No margin on top of headings */
-}
-
+/* Gallery styles */
 .image.gallery {
     display: flex;
-    flex-wrap: wrap; /* Allows images to wrap */
-    justify-content: space-between;
-    margin: 20px;
+    flex-wrap: wrap; /* Allow images to wrap */
+    justify-content: center; /* Center images in the gallery */
 }
 
 .image.gallery img {
-    width: calc(33.33% - 10px); /* Three images in a row, with some margin */
-    margin-bottom: 10px;
-    border-radius: 5px; /* Rounded image corners */
+    margin: 10px;
+    border: 2px solid #555; /* Border for images */
+    border-radius: 8px; /* Rounded corners for images */
 }
 
+/* Footer styles */
 footer {
-
-    text-align: center;
-    padding: 20px;
     background: #333;
     color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 footer img {
-    
-    align-items: right; 
     border-radius: 50%; /* Circular profile picture */
 }
 
-footer h2 {
-    margin: 10px 0; /* Margin for heading in footer */
+/* Responsive styles */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack columns on small screens */
+    }
+    
+    nav ul li {
+        display: block; /* Stack navigation items */
+        margin: 10px 0;
+    }
 }
