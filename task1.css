@@ -25,6 +25,7 @@ header {
 }
 
 nav ul {
+    text-align: center; 
     display: flex;
     list-style: none;
     gap: 30px;
@@ -52,6 +53,7 @@ main {
 }
 
 h2 {
+    font-family: 'Protest Guerrilla', sans-serif;
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -128,6 +130,7 @@ footer img {
     }
     
     header {
+        align-items: center; 
         flex-direction: column;
         text-align: center;
     }
@@ -147,6 +150,7 @@ footer img {
     }
     
     nav ul {
+        align-items: center; 
         flex-direction: column;
         gap: 15px;
         text-align: center;
