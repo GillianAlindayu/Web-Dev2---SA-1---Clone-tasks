@@ -5,11 +5,20 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
 }
 
+
+p{
+    text-align: center; 
+    font-size: 1rem; 
+
+
+}
 /* Header styles */
 header {
     display: flex;
@@ -61,8 +70,15 @@ nav a {
 
 /* First large movie card */
 .first.movie {
+    background-color: rgb(10, 10, 62);
     display: flex;
     flex-direction: column;
+}
+
+.first.movie > div{
+    background-color:rgb(10, 10, 62); 
+    
+
 }
 
 .first.movie img {
@@ -101,19 +117,23 @@ nav a {
 
 /* Common styles for all movie cards */
 .movie h2 {
+
     margin: 1rem 0;
     font-size: 1.2rem;
 }
 
 .movie p {
-    color: #666;
+    
+    color: #2e2e2e;
     margin-bottom: 1rem;
     line-height: 1.4;
 }
 
 button {
+    align-items: end; /*the button should be the end of the div */ 
+    color: bkack; 
     padding: 0.5rem 1rem;
-    background-color: #f8f8f8;
+    background-color: #12f0ec;
     border: 1px solid #ddd;
     border-radius: 4px;
     cursor: pointer;
@@ -128,7 +148,7 @@ button {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .combined {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
     
     .fig, .palm-springs, .barbie {
