@@ -3,16 +3,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    color: white;
 }
 
 /* Header Styles */
 header {
-    background-color: white;
+    background-color: rgb(85, 85, 85);
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .header-container {
+    
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -33,16 +35,17 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #033e21;
+    color: #a9ffd5;
 }
 
 button{
     background-color: yellow; 
 }
 .search-button {
+    color: black; 
     padding: 8px 20px;
     border: none;
-    background-color: #ddd;
+    background-color: #00f7ff;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -58,7 +61,7 @@ button{
 .movie-card {
     background-color: rgb(20, 4, 90);
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgb(131, 131, 131);
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
     margin-bottom: 20px;
     overflow: hidden;
 }
@@ -69,7 +72,7 @@ button{
 }
 
 .movie-poster {
-    background-color: #ddd;
+    background-color: #060505;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,7 +94,7 @@ button{
 
 .placeholder-text h3 {
     font-size: 1.4em;
-    color: #333;
+    color: #89fdff;
     margin-bottom: 10px;
 }
 
@@ -101,10 +104,11 @@ button{
 }
 
 .watch-button {
+    color: black; 
     margin-top: 20px;
     padding: 12px 30px;
     border: none;
-    background-color: #ddd;
+    background-color: #0fbf90;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
