@@ -3,75 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watch.it Movies</title>
-    <link rel="stylesheet" href="task2.css"/> <!-- Linking to the CSS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
-
+    <title>Advanced layout</title>
+    <link rel="stylesheet" href="task2.css"/>
+  
 </head>
 <body>
     <header>
-
-        <!--Title of the website -->
-        <h1 class="title">Watch.it</h1>
-        <nav>
-
-            <!--Navigatios on top-->
-            <ul>
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Comedy</a></li>
-                <li><a href="#">Romance</a></li>
-                <li><a href="#">Drama</a></li> 
-            </ul>
-        </nav>
-        <button class="search">Search</button> <!--Move the search button here-->
+        <div class="header-container">
+            <div class="logo">Watch.it</div>
+            <nav>
+                <a href="#">Action</a>
+                <a href="#">Comedy</a>
+                <a href="#">Romance</a>
+                <a href="#">Drama</a>
+            </nav>
+            <button class="search-button">Search</button>
+        </div>
     </header>
-    
-
-    <!--Main div.-->
-    <!--The Movies and the descriptions -->
-    <main class="container">
-        <div class="first movie">
-            <img src="poster1.jpg" alt="Who Framed Roger Rabbit" />
-            <h2><strong>Who Framed Roger Rabbit - (1998)</strong></h2>
-            <p>In a world where cartoons and humans coexist, a detective must solve a zany, high-stakes mystery...</p>
-            <button>Watch now</button>
-
-         <div class="two combined">
-            <img src="poster2.jpg" alt="Hook" />
-            <h2><strong>Hook - (1991)</strong></h2>
-            <p>Rediscover Neverland as a grown-up Peter Pan, played by Robin Williams, must rescue his kids...</p>
-            <button>Watch now</button>
-
-            <img src="poster3.jpg" alt="La la Land" />
-            <h2><strong>La la Land - (2016)</strong></h2>
-            <p>Love, dreams, and the magic of LA take center stage in this musical masterpiece...</p>
-            <button>Watch now</button>
+    <main class="main-container">
+        <!-- Featured Movie -->
+        <div class="movie-card horizontal">
+            <div class="movie-poster">
+                <img src="poster1.jpg"roger rabbit"/>
+            </div>
+            <div class="movie-content">
+                <div class="placeholder-text short">
+                    <h3>Who Framed The Roger Rabbit - (1998)</h3>
+                </div>
+                <div class="placeholder-text">
+                    <p>In a world where cartoons and humans coexist, a detective must solve a zany, high-stakes mystery....</p>
+                </div>
+                <button class="watch-button">WATCH NOW</button>
+            </div>
         </div>
 
-        <div class="Hidden fig">
-            <img src="poster4.jpg" alt="Hidden Figures" />
-            <h2><strong>Hidden Figures - (2014)</strong></h2>
-            <p>Three unsung heroes of NASA's space race battle discrimination and prove that intelligence can change history...</p>
-            <button>Watch now</button>
+        <!-- Movie Grid -->
+        <div class="movie-grid">
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="poster2.jpg" alt="hook"/>
+                </div>
+                <div class="movie-content">
+                    <div class="placeholder-text short">
+                        <h3>Hook - (1991)</h3>
+                    </div>
+                    <div class="placeholder-text">
+                        <p>Rediscover Neverland as a grown-up Peter Pan, Played 
+                            as Robin williams must have rescue his kids.</p>
+                    </div>
+                    <button class="watch-button">WATCH NOW</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <div class="movie-poster">
+                    <img src="poster3.jpg" alt="lalaland"/>
+                </div>
+                <div class="movie-content">
+                    <div class="placeholder-text short">
+                        <h3>La La Land</h3>
+                    </div>
+                    <div class="placeholder-text">
+                        <p>Love, dreams, and the magic of LA take center 
+                            stage in his musical masterpiece...</p>
+                    </div>
+                    <button class="watch-button">WATCH NOW</button>
+                </div>
+            </div>
         </div>
 
-        <div class="palm springs">
-            <img src="poster5.jpg" alt="Palm Springs" />
-            <h2><strong>Palm Springs - (2020)</strong></h2>
-            <p>A never-ending wedding day turns into an unforgettable time-loop romance...</p>
-            <button>Watch now</button>
+
+         <!--Additional movies followed by three movies in layout-->
+        <div class="movie-card horizontal">
+            <div class="movie-poster">
+                <img src="poster4.jpg" alt="Hidden figures"/>
+            </div>
+            <div class="movie-content">
+                <div class="placeholder-text short">
+                    <h3>Hidden figures - (2016)</h3>
+                </div>
+                <div class="placeholder-text">
+                    <p>Three unsung heroes of NASA's space race take the spotlight in this inspiring true story. 
+                        Battling discrimination and defying the odds, these brilliant African-American women prove that intelligence, perseverance, and unity can change history and break barriers.</p>
+                </div>
+                <button class="watch-button">WATCH NOW</button>
+            </div>
         </div>
-
-        <div class="barbie">
-            <img src="poster6.jpg" alt="Barbie" />
-            <h2><strong>Barbie - (2023)</strong></h2>
-            <p>Step into the dazzling world of Barbie as she embarks on an unexpected adventure...</p>
-            <button>Watch now</button>
-
-
+        <div class="movie-card horizontal">
+            <div class="movie-poster">
+                <img src="poster5.jpg" alt="hot springs"/>
+            </div>
+            <div class="movie-content">
+                <div class="placeholder-text short">
+                    <h3>Palm Springs - (2020)</h3>
+                </div>
+                <div class="placeholder-text">
+                    <p>A never-ending wedding day turns into an unforgettable time-loop romance! Stuck in the same day, two strangers find love, chaos, and meaning in the most unexpected ways.</p>
+                </div>
+                <button class="watch-button">WATCH NOW</button>
+            </div>
         </div>
+        <div class="movie-card horizontal">
+            <div class="movie-poster">
+                <img src="poster6.jpg" alt="barbie"/>
+            </div>
+            <div class="movie-content">
+                <div class="placeholder-text short">
+                    <h3>Barbie - (2023)</h3>
+                </div>
+                <div class="placeholder-text">
+                    <p>Step into the dazzling world of Barbie as she embarks on an unexpected journey from her perfect doll life to the real world. 
+                        Filled with humor, heart, and empowering messages, this vibrant adventure redefines what it means to dream big!</p>
+                </div>
+                <button class="watch-button">WATCH NOW</button>
+            </div>
         </div>
     </main>
 </body>

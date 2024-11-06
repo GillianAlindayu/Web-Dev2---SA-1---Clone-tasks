@@ -1,220 +1,145 @@
-.container--0- {
-    position: absolute;
-    left: -699px;
-    top: -105px;
-    width: 1440px;
-    height: 4313px;
-    background-color: #ffffff;
-    justify-content: start;
-    align-items: start;
-  }
-  .text-0-1-2 {
-    width: 119px;
-    height: 44px;
-    color: #000000;
-    font-size: 36px;
-    font-family: Inter, "Regular";
-    font-weight: 400;
-    text-align: left;
-    vertical-align: top;
-  }
-  .text-0-1-3 {
-    width: 185px;
-    height: 58px;
-    color: #ffffff;
-    font-size: 48px;
-    font-family: Inter, "Regular";
-    font-weight: 400;
-    text-align: left;
-    vertical-align: top;
-  }
-  .text-0-1-4 {
-    width: 97px;
-    height: 39px;
-    color: #ffffff;
-    font-size: 32px;
-    font-family: Inter, "Regular";
-    font-weight: 400;
-    text-align: left;
-    vertical-align: top;
-  }
-  .text-0-1-5 {
-    width: 141px;
-    height: 39px;
-    color: #ffffff;
-    font-size: 32px;
-    font-family: Inter, "Regular";
-    font-weight: 400;
-    text-align: left;
-    vertical-align: top;
-  }
-  .text-0-1-6 {
-    width: 99px;
-    height: 39px;
-    color: #ffffff;
-    font-size: 32px;
-    font-family: Inter, "Regular";
-    font-weight: 400;
-    text-align: left;
-    vertical-align: top;
-  }
-  .text-0-1-7 {
-    width: 127px;
-    height: 39px;
-    color: #ffffff;
-    font-size: 32px;
-    font-family: Inter, "Regular";
-    font-weight: 400;
-    text-align: left;
-    vertical-align: top;
-  }
-  .text-0-1-17 {
-    width: 242px;
-    height: 121px;
-    color: #000000;
-    font-size: 48px;
-    font-family: Inter, "Bold Italic";
-    font-weight: 700;
-    text-align: center;
-    vertical-align: top;
-  }
-  .text-0-1-18 {
-    width: 579px;
-    height: 116px;
-    color: #ffffff;
-    font-size: 48px;
-    font-family: Inter, "Bold Italic";
-    font-weight: 700;
-    text-align: center;
-    vertical-align: top;
-  }
-  .text-0-1-22 {
-    width: 149px;
-    height: 78px;
-    color: #000000;
-    font-size: 32px;
-    font-family: Inter, "Bold Italic";
-    font-weight: 700;
-    text-align: center;
-    vertical-align: top;
-  }
-  .text-0-1-23 {
-    width: 149px;
-    height: 78px;
-    color: #000000;
-    font-size: 32px;
-    font-family: Inter, "Bold Italic";
-    font-weight: 700;
-    text-align: center;
-    vertical-align: top;
-  }
-  .text-0-1-24 {
-    width: 420px;
-    height: 168px;
-    color: #ffffff;
-    font-size: 35px;
-    font-family: Inter, "Light";
-    font-weight: 300;
-    text-align: center;
-    vertical-align: top;
-  }
-  .text-0-1-25 {
-    width: 420px;
-    height: 168px;
-    color: #ffffff;
-    font-size: 35px;
-    font-family: Inter, "Light";
-    font-weight: 300;
-    text-align: center;
-    vertical-align: top;
-  }
-  .text-0-1-26 {
-    width: 420px;
-    height: 76px;
-    color: #ffffff;
-    font-size: 48px;
-    font-family: Inter, "Bold Italic";
-    font-weight: 700;
-    text-align: center;
-    vertical-align: top;
-  }
-  .text-0-1-27 {
-    width: 468px;
-    height: 76px;
-    color: #ffffff;
-    font-size: 48px;
-    font-family: Inter, "Bold Italic";
-    font-weight: 700;
-    text-align: center;
-    vertical-align: top;
-  }
-  .text-0-1-29 {
-    width: 413px;
-    height: 168px;
-    color: #ffffff;
-    font-size: 35px;
-    font-family: Inter, "Light";
-    font-weight: 300;
-    text-align: center;
-    vertical-align: top;
-  }
-  .text-0-1-30 {
-    width: 490px;
-    height: 116px;
-    color: #ffffff;
-    font-size: 48px;
-    font-family: Inter, "Black Italic";
-    font-weight: 900;
-    text-align: center;
-    vertical-align: top;
-  }
-  .text-0-1-33 {
-    width: 490px;
-    height: 58px;
-    color: #ffffff;
-    font-size: 48px;
-    font-family: Inter, "Black Italic";
-    font-weight: 900;
-    text-align: center;
-    vertical-align: top;
-  }
-  .text-0-1-35 {
-    width: 164px;
-    height: 88px;
-    color: #000000;
-    font-size: 36px;
-    font-family: Inter, "Bold Italic";
-    font-weight: 700;
-    text-align: center;
-    vertical-align: top;
-  }
-  .text-0-1-38 {
-    width: 629px;
-    height: 132px;
-    color: #ffffff;
-    font-size: 36px;
-    font-family: Inter, "Light";
-    font-weight: 300;
-    text-align: left;
-    vertical-align: top;
-  }
-  .text-0-1-39 {
-    width: 399px;
-    height: 168px;
-    color: #ffffff;
-    font-size: 35px;
-    font-family: Inter, "Light";
-    font-weight: 300;
-    text-align: center;
-    vertical-align: top;
-  }
-  .text-0-1-41 {
-    width: 164px;
-    height: 88px;
-    color: #000000;
-    font-size: 36px;
-    font-family: Inter, "Bold Italic";
-    font-weight: 700;
-    text-align: center;
-    vertical-align: top;
-  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #033e21;
+}
+
+button{
+    background-color: yellow; 
+}
+.search-button {
+    padding: 8px 20px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Main Container */
+.main-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Movie Card Styles */
+.movie-card {
+    background-color: rgb(20, 4, 90);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(131, 131, 131);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.movie-card.horizontal {
+    display: grid;
+    grid-template-columns: 650px 1fr;
+}
+
+.movie-poster {
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-content {
+    padding: 20px;
+}
+
+.placeholder-text {
+    margin: 20px auto;
+}
+
+.placeholder-text h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.placeholder-text p {
+    color: #fff490;
+    line-height: 1.6;
+}
+
+.watch-button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Movie Grid */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.movie-grid .movie-card {
+    background-color: rgb(4, 4, 58); 
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-grid .movie-poster {
+    width: 100%;
+    height: 470px;
+}
+
+/* Featured Movie */
+.movie-card.horizontal .movie-poster {
+    height: 600px;
+    width: 470px; 
+}
+
+/* Responsive Image Placeholders */
+.movie-poster img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #ddd;
+}
