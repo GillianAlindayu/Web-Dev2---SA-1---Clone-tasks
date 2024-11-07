@@ -146,6 +146,7 @@ footer img {
     
     /* Container for all images */
     .first.image {
+        justify-content: flex-start;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto auto;
