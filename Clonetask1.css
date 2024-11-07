@@ -1,0 +1,94 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .header {
+    grid-column: 1 / -1;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .navigation-menu {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu-item {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    grid-column: 2 / 3;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .article-section {
+    margin-bottom: 20px;
+  }
+  
+  .section-heading {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .section-text {
+    color: #666;
+  }
+  
+  .sidebar {
+    grid-column: 3 / 4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .sidebar-section {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .album-cover {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .featured-album {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .author-profile {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    border-radius: 50%;
+  }
