@@ -12,6 +12,8 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
+  background-color: rgb(rgb(187, 187, 187), green, blue); 
+
 }
 
 /* Header styles */
@@ -24,6 +26,7 @@ header {
 }
 
 nav ul {
+  padding: 40px;
   display: flex;
   list-style: none;
   gap: 30px;
@@ -38,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #666;
+  color: #dc0000;
 }
 
 /* Main content styles */
@@ -51,7 +54,7 @@ nav a:hover {
 }
 
 h2 {
-  font-family: 'Protest-Guerrilla', sans-serif; 
+  font-family: 'Protest Guerrilla', sans-serif;
   font-size: 2rem;
   margin-bottom: 20px;
   text-align: start; /* Centered h2 */
@@ -64,8 +67,8 @@ h3 {
 }
 
 .intro {
-  font-size: 1.2rem;
-  max-width: 800px;
+  font-size: 1rem;
+  max-width: 1000px;
   margin-bottom: 40px;
   text-align: start; /* Centered intro text */
 }
@@ -79,7 +82,7 @@ h3 {
 
 .column {
   flex: 1;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
 }
 
@@ -95,7 +98,7 @@ h3 {
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  gap: 30px;
   margin-bottom: 40px;
 }
 
@@ -113,19 +116,22 @@ h3 {
 
 /* Author section styles */
 .author {
-  text-align: center;
-  padding: 40px 0;
+  text-align: start;
+  padding: 10px 0;
   max-width: 600px;
   margin: 0 auto;
 }
 
 .author img {
+  justify-content:last baseline; 
+  align-items: end;
   border-radius: 50%;
   margin-top: 20px;
 }
 
 .author p {
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 /* Footer styles */
@@ -150,7 +156,8 @@ footer {
   }
   
   nav ul {
-      margin-top: 20px;
+      margin-top: 10px;
+      margin-bottom: 20px;
       justify-content: center; /* Center navigation items on small screens */
   }
   
@@ -172,7 +179,7 @@ footer {
   
   nav ul {
       flex-direction: column;
-      gap: 15px;
+      gap: 20px;
       text-align: center;
   }
   
