@@ -116,22 +116,33 @@ h3 {
 
 /* Author section styles */
 .author {
-  text-align: start;
-  padding: 10px 0;
+  text-align: center;
+  padding: 20px 0;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 20px;
+}
+
+.author h2{
+  text-align: center; 
+  padding: 20px 0; 
+
 }
 
 .author img {
   justify-content:last baseline; 
-  align-items: end;
+  align-items: last baseline;
+  align-items: end; 
   border-radius: 50%;
-  margin-top: 20px;
+  margin-bottom: 10px; 
+  margin-right: 300px;
+  margin-top: 0;
+  margin-left: 200px; 
 }
 
 .author p {
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin-bottom: 5px;
+  margin-left: 3px;
+  margin-right: 20px; 
 }
 
 /* Footer styles */
@@ -140,7 +151,7 @@ footer {
   color: white; 
   text-align: center;
   padding: 20px 0;
-  border-top: 1px solid #eee;
+  border-top: 10px solid #eee;
   margin-top: 40px;
 }
 
@@ -175,6 +186,7 @@ footer {
 @media (max-width: 480px) {
   body {
       padding: 10px;
+      margin-left: 20pc;
   }
   
   nav ul {
