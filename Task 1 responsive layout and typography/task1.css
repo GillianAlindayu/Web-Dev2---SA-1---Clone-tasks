@@ -12,7 +12,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
-  background-color: rgb(rgb(187, 187, 187), green, blue); 
+  background-color: rgb(rgb(162, 162, 162), green, blue); 
 
 }
 
@@ -42,6 +42,15 @@ nav a {
 
 nav a:hover {
   color: #dc0000;
+}
+
+
+.page {
+  border: 1px solid black;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* Add padding if needed */
+  padding: 0 20px;
 }
 
 /* Main content styles */
@@ -97,13 +106,16 @@ h3 {
 /* Image gallery styles */
 .image-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(1,1fr);
+  gap: 40px;
   margin-bottom: 40px;
 }
 
+
+
 .image-gallery img {
-  width: 100%;
+  width: 110%;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
@@ -112,6 +124,12 @@ h3 {
 
 .image-gallery img:hover {
   transform: scale(1.02);
+}
+
+.Images2{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
 }
 
 /* Author section styles */
