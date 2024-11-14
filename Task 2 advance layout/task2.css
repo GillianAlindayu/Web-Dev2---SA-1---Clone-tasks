@@ -105,16 +105,22 @@
     line-height: 1.6;
   }
   
+  
   .button1 {
     justify-self: end;
     color: black;
     padding: 12px 30px;
+    margin: 20px;
     border: none;
     background-color: #fff988;
     border-radius: 4px;
     cursor: pointer;
+    margin-top: 21px;
+    /* margin-left: 200px; */
+    margin-bottom: 9px;
+    margin-inline: 374px;
     font-weight: bold;
-  }
+}
 
   .button1:hover{
     background-color: #0056b3;
