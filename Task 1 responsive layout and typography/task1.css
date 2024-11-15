@@ -12,17 +12,16 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
-  background-color: rgb(228, 228, 228); /* Changed background color */
-
+  background-color: rgb(228, 228, 228);
 }
 
 /* Header styles */
 header {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
+  flex-direction: column;
+  align-items: center;
   padding: 20px 0;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
 }
 
 nav ul {
@@ -30,7 +29,8 @@ nav ul {
   display: flex;
   list-style: none;
   gap: 30px;
-  justify-content: center; /* Center navigation items */
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -44,35 +44,32 @@ nav a:hover {
   color: #dc0000;
 }
 
-
 .page {
-  background-color: white; 
+  background-color: white;
   border: 1px solid black;
   max-width: 1000px;
   margin: 0 auto;
-  /* Add padding if needed */
   padding: 0 20px;
 }
 
 /* Main content styles */
 .title {
-
   font-family: 'Protest Guerrilla', sans-serif;
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   margin-bottom: 10px;
-  text-align: start; /* Centered title */
+  text-align: start;
 }
 
 h2 {
   font-family: 'Protest Guerrilla', sans-serif;
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 4vw, 2rem);
   margin-bottom: 20px;
-  text-align: start; /* Centered h2 */
+  text-align: start;
 }
 
 h3 {
-  font-family: 'Protest Guerrilla', sans-serif; 
-  font-size: 1.5rem;
+  font-family: 'Protest Guerrilla', sans-serif;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
   margin-bottom: 15px;
 }
 
@@ -80,7 +77,7 @@ h3 {
   font-size: 1rem;
   max-width: 1000px;
   margin-bottom: 40px;
-  text-align: start; /* Centered intro text */
+  text-align: start;
 }
 
 /* Column layout */
@@ -107,16 +104,13 @@ h3 {
 /* Image gallery styles */
 .image-gallery {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(1,1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   margin-bottom: 40px;
 }
 
-
-
 .image-gallery img {
-  width: 110%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
@@ -124,51 +118,55 @@ h3 {
 }
 
 .image-gallery img:hover {
-  transform: scale(1.02);
+  transform: scale(1.00);
 }
 
-.Images2{
+.Images2 {
+  display: flex; 
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(2, minmax(5px, 1fr));
+  flex-wrap: wrap; 
+  gap: 20px;
 }
 
 /* Author section styles */
 .author {
-  padding: 20px ;
+  padding: 20px;
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
-s
-.author h2{
-  text-align: center; 
-  padding: 20px 0; 
 
+.author h2 {
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
 }
-.author-image{
+
+.author-image {
   flex: 0 0 200px;
 }
-.author-image img{
-order: -1;
-margin-bottom: 20px;
-border-radius: 50%;
-height: auto;
-max-width: 200px;
-width: 100%;
+
+.author-image img {
+  border-radius: 50%;
+  height: auto;
+  max-width: 200px;
+  width: 100%;
 }
 
-.author-content{
+.author-content {
   flex: 1;
-  padding-right: 20px;
+  min-width: 300px;
 }
 
 /* Footer styles */
 footer {
-  background-color: black; 
-  color: white; 
+  background-color: black;
+  color: white;
   text-align: center;
   padding: 20px 0;
   border-top: 10px solid #eee;
@@ -177,50 +175,47 @@ footer {
 
 /* Responsive design */
 @media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
   .row {
-      flex-direction: column;
+    flex-direction: column;
   }
-  
-  header {
-      align-items: center;
-      text-align: center;
-  }
-  
+
   nav ul {
-      margin-top: 10px;
-      margin-bottom: 20px;
-      justify-content: center; /* Center navigation items on small screens */
+    padding: 20px;
+    gap: 15px;
   }
-  
-  .title {
-      font-size: 2.5rem;
-      align-items: start; 
+
+  .image-gallery {
+    grid-template-columns: 1fr;
   }
-  
-  h2 {
-    font-family: 'Protest Guerrilla', sans-serif; 
-      font-size: 1.8rem;
-  }
-  .author-image img{
-    flex: 0 0 200px;
-    margin-right: 20px;
-      order: 10;
-    }
 }
 
 @media (max-width: 480px) {
   body {
-      padding: 10px;
-      margin-left: 20pc;
+    padding: 10px;
   }
-  
+
+  .page {
+    padding: 0 15px;
+  }
+
   nav ul {
-      flex-direction: column;
-      gap: 20px;
-      text-align: center;
+    flex-direction: column;
+    gap: 15px;
   }
-  
-  .title {
-      font-size: 2rem;
+
+  .author {
+    text-align: center;
+  }
+
+  .author-image {
+    margin: 0 auto;
+  }
+
+  .author-content {
+    padding-right: 0;
   }
 }
