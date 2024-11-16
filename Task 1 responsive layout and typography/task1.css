@@ -52,7 +52,7 @@ nav a:hover {
   padding: 0 20px;
 }
 
-/* Main content styles */
+/* Title styles */
 .title {
   font-family: 'Protest Guerrilla', sans-serif;
   font-size: clamp(2rem, 5vw, 3.5rem);
@@ -80,7 +80,7 @@ h3 {
   text-align: start;
 }
 
-/* Column layout */
+/* Layout components */
 .row {
   display: flex;
   gap: 20px;
@@ -101,7 +101,7 @@ h3 {
   margin-bottom: 0;
 }
 
-/* Image gallery styles */
+/* Image components */
 .image-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -123,15 +123,12 @@ h3 {
 }
 
 .Images2 {
-  flex-wrap: wrap; 
-  display: flex; 
   display: grid;
   grid-template-columns: repeat(2, minmax(2px, 1fr));
-  flex-wrap: wrap; 
   gap: 5px;
 }
 
-/* Author section styles */
+/* Author section */
 .author {
   padding: 20px;
   max-width: 1000px;
@@ -165,7 +162,7 @@ h3 {
   min-width: 300px;
 }
 
-/* Footer styles */
+/* Footer */
 footer {
   background-color: black;
   color: white;
@@ -175,49 +172,129 @@ footer {
   margin-top: 40px;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
+/* Desktop (1024px and below) */
+@media (min-width: 1030px) {
   body {
     padding: 15px;
   }
-
-  .row {
-    flex-direction: column;
+  
+  .page {
+    padding: 0 15px;
   }
+  
+  .row {
+    gap: 10 px;
+  }
+  
+  .image-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .author {
+    padding: 15px;
+  }
+}
 
+/* Tablet (720px and below) */
+@media (max-width: 730px) {
+  body {
+    padding: 12px;
+  }
+  
   nav ul {
     padding: 20px;
     gap: 15px;
   }
-
+  
+  .row {
+    flex-direction: column;
+  }
+  
   .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .Images2 {
     grid-template-columns: 1fr;
   }
-}
-
-@media (max-width: 480px) {
-  body {
-    padding: 10px;
-  }
-
-  .page {
-    padding: 0 15px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 15px;
-  }
-
+  
   .author {
+    flex-direction: column;
     text-align: center;
   }
-
+  
   .author-image {
     margin: 0 auto;
   }
+}
 
+/* Phone (540px and below) */
+@media (max-width: 540px) {
+  body {
+    padding: 10px;
+  }
+  
+  .page {
+    padding: 0 10px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+  }
+  
+  .title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+  }
+  
+  h2 {
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
+  }
+  
+  .image-gallery {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
   .author-content {
-    padding-right: 0;
+    min-width: 100%;
+  }
+}
+
+/* Small Phones (340px and below) */
+@media (max-width: 350px) {
+  body {
+    padding: 5px;
+  }
+  
+  .page {
+    padding: 0 5px;
+  }
+  
+  nav ul {
+    padding: 10px;
+    gap: 8px;
+  }
+  
+  .title {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+  
+  h2 {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  }
+  
+  h3 {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+  }
+  
+  .author-image {
+    flex: 0 0 150px;
+  }
+  
+  .author-image img {
+    max-width: 150px;
   }
 }
